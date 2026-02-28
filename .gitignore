@@ -4,12 +4,11 @@ venv/
 env/
 ENV/
 
-# Outputs - Too large, team members should regenerate locally
-outputs/*.pkl
-outputs/*.h5
-outputs/*.csv
-# Keep visualization PNGs for documentation
-# outputs/*.png
+# Outputs - Team members should regenerate locally
+outputs/
+
+# But track the outputs directory itself (keep it in repo structure)
+!outputs/.gitkeep
 
 # Python Cache
 __pycache__/
