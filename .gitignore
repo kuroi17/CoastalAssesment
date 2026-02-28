@@ -1,0 +1,69 @@
+# Python Virtual Environment
+coastal_env/
+venv/
+env/
+ENV/
+
+# Outputs - Too large, team members should regenerate locally
+outputs/*.pkl
+outputs/*.h5
+outputs/*.csv
+# Keep visualization PNGs for documentation
+# outputs/*.png
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDE Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large Data Files (if needed, use Git LFS or external storage)
+*.tiff
+*.tif
+*.hdf
+
+# Model Checkpoints (too large)
+*.weights.h5
+checkpoint/
+
+# Logs
+*.log
+logs/
+
+# Distribution / Packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
