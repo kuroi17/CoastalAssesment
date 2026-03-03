@@ -1,0 +1,5 @@
+# This file keeps the outputs/ directory in Git
+
+# The folder will be empty when cloned
+
+# Team members will generate their own outputs when running notebooks
