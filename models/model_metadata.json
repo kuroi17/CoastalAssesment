@@ -1,22 +1,37 @@
 {
-  "model_type": "RandomForestClassifier",
-  "n_features": 7,
+  "model_type": "RandomForestClassifier (RF + Spatial Features)",
+  "n_features": 21,
   "feature_names": [
-    "B02 (Blue)",
-    "B03 (Green)",
-    "B04 (Red)",
-    "B08 (NIR)",
-    "NDVI",
-    "NDWI",
-    "Texture"
+    "B02_center",
+    "B03_center",
+    "B04_center",
+    "B08_center",
+    "NDVI_center",
+    "NDWI_center",
+    "Texture_center",
+    "B02_mean",
+    "B03_mean",
+    "B04_mean",
+    "B08_mean",
+    "NDVI_mean",
+    "NDWI_mean",
+    "Texture_mean",
+    "B02_std",
+    "B03_std",
+    "B04_std",
+    "B08_std",
+    "NDVI_std",
+    "NDWI_std",
+    "Texture_std"
   ],
   "classes": [
     1,
     2,
     3,
-    4
+    4,
+    5
   ],
-  "test_accuracy": 0.8962264150943396,
-  "training_samples": 844,
-  "testing_samples": 212
+  "test_accuracy": 0.926605504587156,
+  "training_samples": 871,
+  "testing_samples": 218
 }
