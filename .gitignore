@@ -7,7 +7,8 @@ ENV/
 # Outputs - Team members should regenerate locally
 outputs/
 
-# But track the outputs directory itself (keep it in repo structure)
+# But preserve folder structure with .gitkeep files
+!.gitkeep
 !outputs/.gitkeep
 
 # Python Cache
@@ -36,10 +37,10 @@ __pycache__/
 ehthumbs.db
 Thumbs.db
 
-# Large Data Files (if needed, use Git LFS or external storage)
-*.tiff
-*.tif
-*.hdf
+# Large Data Files - COMMENTED OUT to include data files for teammates
+# *.tiff
+# *.tif
+# *.hdf
 
 # Model Checkpoints (too large)
 *.weights.h5
