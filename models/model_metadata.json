@@ -1,0 +1,22 @@
+{
+  "model_type": "RandomForestClassifier",
+  "n_features": 7,
+  "feature_names": [
+    "B02 (Blue)",
+    "B03 (Green)",
+    "B04 (Red)",
+    "B08 (NIR)",
+    "NDVI",
+    "NDWI",
+    "Texture"
+  ],
+  "classes": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "test_accuracy": 0.8962264150943396,
+  "training_samples": 844,
+  "testing_samples": 212
+}

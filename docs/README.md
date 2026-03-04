@@ -1,10 +1,9 @@
-# 🌊 Coastal Assessment System using Sentinel-2 + Random Forest
+# 🌊 Coastal Assessment System using Sentinel-2 + 1D CNN
 
 > **Hackathon Project**: Analyze satellite images to detect coastal damage (seagrass loss, shoreline erosion) and provide evidence-based recommendations for government agencies.
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
-![Scikit--learn](https://img.shields.io/badge/Scikit--learn-1.3+-orange)
-![Rasterio](https://img.shields.io/badge/Rasterio-1.5+-green)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.20.0-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
@@ -12,9 +11,9 @@
 ## 📋 Table of Contents
 
 - [Overview](#overview)
-- [Project Structure](#project-structure)
 - [Prerequisites](#prerequisites)
 - [Installation Guide](#installation-guide)
+- [Project Structure](#project-structure)
 - [Quick Start](#quick-start)
 - [Workflow](#workflow)
 - [Troubleshooting](#troubleshooting)
@@ -24,38 +23,20 @@
 
 ## 🎯 Overview
 
-This system uses **Copernicus Sentinel-2** satellite imagery and a **Random Forest Classifier** to:
+This system uses **Copernicus Sentinel-2** satellite imagery and a **1D Convolutional Neural Network** to:
 
-- Calculate multi-spectral indices (NDVI, NDWI, Texture)
-- Classify coastal pixels into 5 classes: Seagrass, Sand, Seaweed, Water, Landmass
+- Calculate NDVI (Normalized Difference Vegetation Index)
+- Classify coastal pixels into: Seagrass, Water, Sand, Cloud
 - Track area changes over multiple years
 - Generate evidence-based reports for policy makers
-   
+
 **Key Features:**
 
-- ✅ Modular Jupyter notebooks (organized in `notebooks/` folder)
-- ✅ Smart feature engineering (7 spectral features)
-- ✅ Fast Random Forest classifier (~10 sec training)
+- ✅ Modular Jupyter notebooks (5 separate notebooks)
+- ✅ Automated pixel classification
+- ✅ 1D CNN for spectral analysis
 - ✅ Multi-year trend analysis
-- ✅ Area calculations in km² and hectares
-- ✅ Professional folder structure for hackathon submission
-
----
-
-## 📁 Project Structure
-
-```
-matlabTiff/
-├── notebooks/          # 🔬 Analysis workflow (00-05)
-├── data/              # 📊 Raw, training, and processed data
-├── models/            # 🤖 Trained models & metadata
-├── results/           # 📈 Classification maps & reports
-├── outputs/           # 📂 Intermediate outputs
-├── docs/              # 📖 Documentation
-└── README.md          # This file
-```
-
-**For detailed structure documentation, see:** [`docs/PROJECT_STRUCTURE.md`](docs/PROJECT_STRUCTURE.md)
+- ✅ Area calculations in km²
 
 ---
 
