@@ -3,13 +3,23 @@ coastal_env/
 venv/
 env/
 ENV/
+.venv/
+.venv_old/
 
-# Outputs - Team members should regenerate locally
-outputs/
+# Outputs and Results - Ignore generated files but keep folder structure
+# This allows teammates to see folders but not your local results
+outputs/*
+!outputs/.gitkeep
+results/*
+!results/.gitkeep
+models/*.pkl
+models/*.keras
+models/*.h5
+!models/.gitkeep
+!models/model_metadata.json
 
 # But preserve folder structure with .gitkeep files
 !.gitkeep
-!outputs/.gitkeep
 
 # Python Cache
 __pycache__/
