@@ -1,0 +1,134 @@
+{
+  "2020": [
+    {
+      "category": "Seagrass",
+      "area": 420.1,
+      "change": 0.0
+    },
+    {
+      "category": "Sand",
+      "area": 122.0,
+      "change": 0.0
+    },
+    {
+      "category": "Water",
+      "area": 870.0,
+      "change": 0.0
+    },
+    {
+      "category": "Landmass",
+      "area": 78.0,
+      "change": 0.0
+    }
+  ],
+  "2021": [
+    {
+      "category": "Seagrass",
+      "area": 430.0,
+      "change": 2.4
+    },
+    {
+      "category": "Sand",
+      "area": 121.0,
+      "change": -0.8
+    },
+    {
+      "category": "Water",
+      "area": 875.0,
+      "change": 0.6
+    },
+    {
+      "category": "Landmass",
+      "area": 78.1,
+      "change": 0.1
+    }
+  ],
+  "2022": [
+    {
+      "category": "Seagrass",
+      "area": 440.0,
+      "change": 2.3
+    },
+    {
+      "category": "Sand",
+      "area": 120.8,
+      "change": -0.2
+    },
+    {
+      "category": "Water",
+      "area": 880.0,
+      "change": 0.6
+    },
+    {
+      "category": "Landmass",
+      "area": 78.2,
+      "change": 0.1
+    }
+  ],
+  "2023": [
+    {
+      "category": "Seagrass",
+      "area": 450.2,
+      "change": 2.3
+    },
+    {
+      "category": "Sand",
+      "area": 120.5,
+      "change": -0.2
+    },
+    {
+      "category": "Water",
+      "area": 890.3,
+      "change": 1.2
+    },
+    {
+      "category": "Landmass",
+      "area": 78.1,
+      "change": -0.1
+    }
+  ],
+  "2024": [
+    {
+      "category": "Seagrass",
+      "area": 455.0,
+      "change": 1.1
+    },
+    {
+      "category": "Sand",
+      "area": 120.0,
+      "change": -0.4
+    },
+    {
+      "category": "Water",
+      "area": 892.0,
+      "change": 0.2
+    },
+    {
+      "category": "Landmass",
+      "area": 78.1,
+      "change": 0.0
+    }
+  ],
+  "2025": [
+    {
+      "category": "Seagrass",
+      "area": 460.0,
+      "change": 1.1
+    },
+    {
+      "category": "Sand",
+      "area": 119.5,
+      "change": -0.4
+    },
+    {
+      "category": "Water",
+      "area": 895.0,
+      "change": 0.3
+    },
+    {
+      "category": "Landmass",
+      "area": 78.1,
+      "change": 0.0
+    }
+  ]
+}
