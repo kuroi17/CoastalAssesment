@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coastal Change Analysis Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Coastal Change Analysis</h1>
+      <nav>
+        <span class="active">Dashboard</span>
+        <span>Satellite Data</span>
+        <span>Eco Reports</span>
+        <span>Global Archive</span>
+        <select id="yearSelect">
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023" selected>2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+        </select>
+      </nav>
+    </header>
+    <main>
+      <section class="map-area">
+        <h2>Coastal Coverage Map</h2>
+        <img
+          id="coverageMap"
+          src="map-placeholder.png"
+          alt="Coastal Coverage Map"
+        />
+        <div class="legend">
+          <span><span class="dot seagrass"></span>Seagrass Meadows</span>
+          <span><span class="dot sand"></span>Sandy Shoals</span>
+          <span><span class="dot water"></span>Deep Water</span>
+        </div>
+      </section>
+      <section class="area-measurements">
+        <h2>Area Measurements</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Area (km²)</th>
+              <th>Change</th>
+            </tr>
+          </thead>
+          <tbody id="areaTable">
+            <!-- Data will be injected here -->
+          </tbody>
+        </table>
+        <div class="total-area">
+          Total Monitored Area: <span id="totalArea">1,539.1</span> km²
+        </div>
+      </section>
+      <section class="trend-summary">
+        <div class="trend-graph">
+          <h2>Coverage Trends Over Time</h2>
+          <canvas id="trendChart" width="400" height="200"></canvas>
+        </div>
+        <div class="ecological-summary">
+          <h2>Ecological Summary</h2>
+          <div id="ecoSummary">
+            <!-- Summary will be injected here -->
+          </div>
+          <button id="downloadReport">Download Full PDF Report</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <small
+        >&copy; 2026 Coastal Science Institute. Satellite data provided by
+        Copernicus Sentinel-2.</small
+      >
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

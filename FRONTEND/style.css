@@ -1,0 +1,148 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f7fafc;
+  margin: 0;
+  color: #222;
+}
+header {
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.7rem;
+  color: #1a936f;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+nav span.active {
+  color: #1a936f;
+  font-weight: bold;
+}
+nav select {
+  margin-left: auto;
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #d0d0d0;
+  background: #f0f0f0;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+}
+.map-area {
+  flex: 1 1 400px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 1.5rem;
+  min-width: 350px;
+  max-width: 500px;
+}
+.map-area img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: #e0e0e0;
+}
+.legend {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+}
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 0.4em;
+}
+.seagrass {
+  background: #1a936f;
+}
+.sand {
+  background: #ffe156;
+}
+.water {
+  background: #0077b6;
+}
+.area-measurements {
+  flex: 1 1 250px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 1.5rem;
+  min-width: 250px;
+  max-width: 320px;
+}
+.area-measurements table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+.area-measurements th,
+.area-measurements td {
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+}
+.area-measurements th {
+  background: #f0f0f0;
+}
+.area-measurements td {
+  border-bottom: 1px solid #f0f0f0;
+}
+.area-measurements .total-area {
+  font-size: 0.95rem;
+  color: #888;
+}
+.trend-summary {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+  justify-content: center;
+}
+.trend-graph,
+.ecological-summary {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 1.5rem;
+  min-width: 320px;
+  max-width: 420px;
+  flex: 1 1 320px;
+}
+.trend-graph canvas {
+  width: 100% !important;
+  height: 200px !important;
+}
+.ecological-summary button {
+  margin-top: 1.2rem;
+  background: #1a936f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.ecological-summary button:hover {
+  background: #168f5c;
+}
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.95rem;
+  margin: 2rem 0 1rem 0;
+}
