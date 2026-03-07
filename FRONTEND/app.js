@@ -216,10 +216,17 @@ function updateEcoSummary(year) {
 }
 
 function updateMap(year) {
-  // Try to load year-specific map, fallback to placeholder
-  const mapImg = document.getElementById("coverageMap");
-  mapImg.src = `data/map_${year}.png`;
-  mapImg.onerror = function () {
+  // Load true color satellite image
+  const trueColorImg = document.getElementById("trueColorMap");
+  trueColorImg.src = `data/map_${year}.png`;
+  trueColorImg.onerror = function () {
+    this.src = "map-placeholder.svg";
+  };
+
+  // Load classified map
+  const classifiedImg = document.getElementById("classifiedMap");
+  classifiedImg.src = `data/classified_${year}.png`;
+  classifiedImg.onerror = function () {
     this.src = "map-placeholder.svg";
   };
 }

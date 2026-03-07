@@ -26,17 +26,33 @@
       </nav>
     </header>
     <main>
-      <section class="map-area">
-        <h2>Coastal Coverage Map</h2>
-        <img
-          id="coverageMap"
-          src="map-placeholder.svg"
-          alt="Coastal Coverage Map"
-        />
+      <section class="map-area dual-maps">
+        <h2>Coastal Coverage Analysis</h2>
+        <div class="map-container">
+          <div class="map-item">
+            <h3>True Color Satellite Image</h3>
+            <img
+              id="trueColorMap"
+              src="map-placeholder.svg"
+              alt="True Color Satellite Image"
+            />
+            <p class="map-caption">Raw satellite imagery (RGB)</p>
+          </div>
+          <div class="map-item">
+            <h3>Classified Coverage Map</h3>
+            <img
+              id="classifiedMap"
+              src="map-placeholder.svg"
+              alt="Classified Coverage Map"
+            />
+            <p class="map-caption">Model prediction results</p>
+          </div>
+        </div>
         <div class="legend">
-          <span><span class="dot seagrass"></span>Seagrass Meadows</span>
-          <span><span class="dot sand"></span>Sandy Shoals</span>
-          <span><span class="dot water"></span>Deep Water</span>
+          <span><span class="dot seagrass"></span>Seagrass</span>
+          <span><span class="dot sand"></span>Sand</span>
+          <span><span class="dot water"></span>Water</span>
+          <span><span class="dot landmass"></span>Landmass</span>
         </div>
       </section>
       <section class="area-measurements">

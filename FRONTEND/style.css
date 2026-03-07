@@ -41,19 +41,49 @@ main {
   justify-content: center;
 }
 .map-area {
-  flex: 1 1 400px;
+  flex: 1 1 800px;
   background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 8px #0001;
   padding: 1.5rem;
   min-width: 350px;
-  max-width: 500px;
+  max-width: 1200px;
+}
+.map-area.dual-maps {
+  max-width: 100%;
+  flex: 1 1 100%;
+}
+.map-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.map-item {
+  text-align: center;
+}
+.map-item h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.8rem 0;
+  color: #555;
+  font-weight: 600;
 }
 .map-area img {
   width: 100%;
   border-radius: 8px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   background: #e0e0e0;
+  border: 2px solid #e0e0e0;
+  transition: border-color 0.2s;
+}
+.map-area img:hover {
+  border-color: #1a936f;
+}
+.map-caption {
+  font-size: 0.85rem;
+  color: #888;
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
 }
 .legend {
   display: flex;
@@ -75,6 +105,9 @@ main {
 }
 .water {
   background: #0077b6;
+}
+.landmass {
+  background: #8b4513;
 }
 .area-measurements {
   flex: 1 1 250px;
