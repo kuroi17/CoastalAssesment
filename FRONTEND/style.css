@@ -97,17 +97,20 @@ main {
   border-radius: 50%;
   margin-right: 0.4em;
 }
+.seaweed{
+  background: purple;
+}
 .seagrass {
   background: #1a936f;
 }
 .sand {
-  background: #ffe156;
+  background: orange;
 }
 .water {
   background: #0077b6;
 }
 .landmass {
-  background: #8b4513;
+  background: gray;
 }
 .area-measurements {
   flex: 1 1 250px;
